@@ -41,3 +41,21 @@ $enable-transitions:       true;
 $enable-hover-media-query: false;
 $enable-grid-classes:      true;
 $enable-print-styles:      true;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:       $gray-lightest;
+$body-color:    $gray-dark;
+$inverse-bg:    $gray-dark;
+$inverse-color: $gray-lighter;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:            $brand-primary;
+$link-decoration:       none;
+$link-hover-color:      darken($link-color, 15%);
+$link-hover-decoration: underline;

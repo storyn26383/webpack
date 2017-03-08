@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
-  entry: './src/js/app.js',
+  entry: './src/js/main.js',
   output: {
     path: './public',
     filename: 'app.js'
@@ -29,6 +29,13 @@ module.exports = {
     }, {
       test: /\.scss$/,
       loader: 'style-loader!css-loader!sass-loader!autoprefixer-loader?browsers=last 2 versions'
+    }, {
+      test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+      loader: 'url-loader',
+      query: {
+        limit: 10000,
+        name: 'images/[name].[ext]'
+      }
     }, {
       test: /\.(woff2?|eot|ttf|otf|svg)(\?.*)?$/,
       loader: 'url-loader',
