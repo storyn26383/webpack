@@ -1,15 +1,12 @@
 <template lang="pug">
-  .wrapper
-    h1
-      span.pr-3: i.fa.fa-code(aria-hidden="true")
-      | Hello Webpack
+  #app
+    .wrapper
+      router-view
 </template>
 
 <script>
   export default {
-    mounted () {
-      console.log('Component mounted.');
-    }
+    name: 'app'
   }
 </script>
 
