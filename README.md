@@ -1,6 +1,6 @@
 # Vue.js Project Template
 
-A Vue.js project template build with Webpack and vue-loader.
+A Vue.js project template build with Webpack and `vue-loader`.
 
 ## Quick Start
 
@@ -19,7 +19,7 @@ make build
 ### Build for production
 
 ```bash
-make build
+make build-prod
 ```
 
 ### Watch
