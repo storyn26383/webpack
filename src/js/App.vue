@@ -1,21 +1,18 @@
 <template lang="pug">
   #app
     .wrapper
-      nav-bar
+      my-nav-bar
       router-view
       my-footer
 </template>
 
 <script>
-  import navBar from './components/NavBar';
-  import footer from './components/Footer';
+  import myNavBar from './components/NavBar';
+  import myFooter from './components/Footer';
 
   export default {
     name: 'app',
-    components: {
-      'nav-bar': navBar,
-      'my-footer': footer
-    }
+    components: { myNavBar, myFooter }
   };
 </script>
 
