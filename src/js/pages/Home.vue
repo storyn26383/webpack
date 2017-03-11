@@ -40,18 +40,7 @@
 
 <style lang="scss" scoped>
   .page {
-    .fa {
-      padding-right: 1rem;
-    }
-
-    .jumbotron {
-      background-color: #fff;
-    }
-
     .card {
-      border: 0;
-      border-radius: 0;
-      padding: 1rem;
       margin-bottom: 2rem;
 
       img {

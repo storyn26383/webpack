@@ -19,5 +19,19 @@
 <style lang="scss">
   .wrapper {
     letter-spacing: 1px;
+
+    .fa {
+      padding-right: 1rem;
+    }
+
+    .jumbotron {
+      background-color: #fff;
+    }
+
+    .card {
+      border: 0;
+      border-radius: 0;
+      padding: 1rem;
+    }
   }
 </style>

@@ -30,6 +30,9 @@ module.exports = {
       test: /\.scss$/,
       loader: 'style-loader!css-loader!sass-loader!autoprefixer-loader?browsers=last 2 versions'
     }, {
+      test: /\.css$/,
+      loader: 'style-loader!css-loader!autoprefixer-loader?browsers=last 2 versions'
+    }, {
       test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
       loader: 'url-loader',
       query: {
