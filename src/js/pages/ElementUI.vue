@@ -19,6 +19,9 @@
           .form-group
             label(for="date") Pick a day
             p: el-date-picker#date(type="date", placeholder="Pick a day", v-model="date")
+          .form-group
+            label(for="daterange") Pick a range
+            p: el-date-picker#daterange(type="daterange", placeholder="Pick a range", v-model="daterange")
 </template>
 
 <script>
@@ -35,6 +38,7 @@
     data () {
       return {
         date: '',
+        daterange: ''
       };
     }
   }
@@ -43,9 +47,13 @@
 <style lang="scss" scoped>
   .page {
     form {
-      h4 small {
-        padding-left: 1rem;
-        font-size: 50%;
+      h4 {
+        margin-bottom: 1rem;
+
+        small {
+          padding-left: 1rem;
+          font-size: 50%;
+        }
       }
 
       .form-group:last-child {
