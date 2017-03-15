@@ -1,12 +1,9 @@
 init:
 	yarn install
-	make build-prod
+	make build
 
 build:
 	./node_modules/.bin/webpack
-
-build-prod:
-	./node_modules/.bin/webpack -p
 
 watch:
 	./node_modules/.bin/webpack -w

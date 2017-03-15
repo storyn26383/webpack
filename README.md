@@ -16,12 +16,6 @@ make init
 make build
 ```
 
-### Build for production
-
-```bash
-make build-prod
-```
-
 ### Watch
 
 ```bash
